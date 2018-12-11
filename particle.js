@@ -10,7 +10,7 @@ class Particle {
     for (let i = 0; i < this.history.length; i++) {
       let pos = this.history[i];
       stroke(255, i);
-      strokeWeight(map(i, 0, 1000, 1, 6));
+      strokeWeight(map(i, 0, 1000, 1, 5));
       point(pos.x, pos.y);
     }
   }

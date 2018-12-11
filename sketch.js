@@ -8,15 +8,18 @@ let incrementY = 0.005;
 let incrSliderX, incrSliderY;
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent('sketch-holder');
   pixelDensity(1);
   particle = new Particle();
-  incrSliderX = createSlider(0.001, 0.05, 0.005, 0.001);
-  incrSliderX.position(width + 10, 30);
+  incrSliderX = createSlider(0.001, 0.05, 0.003, 0.001);
+  //incrSliderX.position(40, height + 10);
   incrSliderX.style('width', '160px');
-  incrSliderY = createSlider(0.001, 0.05, 0.005, 0.001);
-  incrSliderY.position(width + 10, 90);
+  incrSliderY = createSlider(0.001, 0.05, 0.05, 0.001);
+  //incrSliderY.position(280, height + 10);
   incrSliderY.style('width', '160px');
+  incrSliderX.parent('sliders');
+  incrSliderY.parent('sliders');
 
 }
 
@@ -42,10 +45,10 @@ function draw() {
   }
   updatePixels();
 
+  particle.update();
+  particle.show();
   strokeWeight(1);
   stroke(0);
   line(n, 0, n, height);
   line(0, ny, width, ny);
-  particle.update();
-  particle.show();
 }
