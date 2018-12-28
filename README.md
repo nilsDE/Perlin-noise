@@ -10,4 +10,5 @@ Perlin invented Perlin Noise in 1985 - it's a procedural texture primitive.
 
 ## How to use this repository
 
-You can check out my visualiztion here. 
+[You can check out my visualiztion here.](https://nilsde.github.io/Perlin-noise/) 
+(Ideally open in Chrome)
