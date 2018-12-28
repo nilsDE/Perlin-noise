@@ -1,0 +1,9 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sliders, #sketch-holder, h1, p {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}

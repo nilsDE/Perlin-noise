@@ -13,10 +13,8 @@ function setup() {
   pixelDensity(1);
   particle = new Particle();
   incrSliderX = createSlider(0.001, 0.05, 0.003, 0.001);
-  //incrSliderX.position(40, height + 10);
   incrSliderX.style('width', '160px');
   incrSliderY = createSlider(0.001, 0.05, 0.05, 0.001);
-  //incrSliderY.position(280, height + 10);
   incrSliderY.style('width', '160px');
   incrSliderX.parent('sliders');
   incrSliderY.parent('sliders');
